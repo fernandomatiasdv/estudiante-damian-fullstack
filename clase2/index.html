@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Declaramos una variable
+        var numero1;
+        // Le asignamos un valor:
+        numero1 = 3;
+        // Mostramos por consola el valor
+        console.log("primera asignación: " + numero1);
+        //podemos asignarle otro:
+        numero1 = 5;
+        // Volvemos a mostrarlo
+        console.log("Acabo de modificarlo: " +numero1);
+
+        // Asi como hicimos una variable y lo asiganamos por separado, podemos hacerlo todo junto:
+        var numero2 = 4;
+        // Mostramos por consola el valor
+        console.log("Generación y asignación: numero2 : " + numero2);
+
+        // Y así como generamos/asignamos una variable podemos hacerlo con varias,
+        // separándolas con una coma:
+        var numero3 = 1, numero4 = 10;
+        // Mostramos los valores por consola
+        //console.log("numero3 " + numero3 + " numero4 " + numero4);
+
+        // Ahora podemos hacer las operaciones matemáticas básicas:
+        var suma = numero1 + numero2 + numero3;
+        // Mostramos el valor de suma
+        console.log(suma);
+        //Y de repente nos damos cuenta que nos olvidamos de sumar el ultimo número (el numero4):
+        suma = suma + parseInt(numero4);
+        // Mostramos el valor de suma
+        console.log("La suma mas la cuarta variable es " , suma);
+    
+
+        //Y así como hicimos 
+        //  suma = suma + numero4; 
+        // también podemos resumirlo de esta forma:
+        //  suma += 4;
+        // A esto no lo vimos pero sino lo entendes no te preocupes que lo vemos en la clase.
+
+        // Bien no solo vimos la suma, sino también la resta, la multiplicación y la división.
+        var resta, multiplicacion, division;
+
+        resta = numero4 - numero;    // Simbolo de resta: -
+        multiplicacion = numero4 * numero; // Simbolo de multiplicar: *
+        division = numero4 / numero; // Simbolo de dividir: /
+
+        // Ahora bien, el problema es que NO podemos dividir por cero:
+        // division = numero4 / 0, ya que nos daría error
+        // entonces necesitamos CONTROLAR el valor que se ingresa
+        // para esto vamos a usar el condificional IF
+
+        // Para este caso descomentá el siguiente comentario:
+        // var numero5 = prompt("Ingresa el valor numero5")
+        // Si la persona ingresó el numero 0 entonces le vamos a informar que no lo puede ingresar.
+        if(numero5 === 0){
+            console.error("No se puede dividir por cero")
+        }else{
+        // En el caso que NO haya ingresado el 0 podemos hacer la division   
+            division = numero4 / numero5; // Simbolo de dividir: /
+        }
+
+        
+
+        // var numero1 = 5, numero2 = 10;
+/*
+        var valor = "El valor de la";
+        var numero1 = 6;
+        var numero2 = 10;
+        var suma, resta;
+        var multiplicacion, division;
+
+        suma = numero1 + numero2;
+        multiplicacion = numero1 * numero2;
+        resta = numero1 - numero2;
+        division = numero1 / numero2;
+
+        console.log(valor, " suma es " , suma);
+        console.log(valor, " multiplicaciones es " , multiplicacion);
+        console.log(valor , " resta es " , resta);
+        console.log(valor ," division es " , division);
+*/
+
+        // Condicionales
+
+        /*
+        if(true) {
+            console.log("1 - Es verdadero")
+        }else{
+            console.warn("1 - Es falso")
+        }
+
+        if(false) {
+            console.log("2 - Es verdadero")
+        }else{
+            console.warn("2 - Es falso")
+        }
+        */
+
+/*        var edad = prompt("Ingresa tu edad"); 
+        if(edad < 18){
+            alert("GUARDA!! Que es menor! ");
+        }else{
+            alert("No pasa nada, es mayor ")
+        }
+*/
+
+/*
+        var edad = prompt("Ingresa tu edad"); 
+        if(peso < 18){
+            alert("GUARDA!! Que es menor! ");
+        }else{
+            alert("No pasa nada, es mayor ")
+        }
+*/
+
+/*
+        Ejercicio 1:
+        Dado los números numero1 y numero2 sumalos y, si el valor resultante
+        es menor a 10 entonces mostra el cartel "Es menor a 10"
+        sino mostra el cartel "Es mayor a 10"
+*/
+/*
+    Ejercicio 2:
+        Desarrollar un algoritmo que pida por prompt dos números 
+        y mostrar solo el segundo por consola.
+ 
+        var num1 = prompt("Ingresá el primer valor");
+        var num2 = prompt("Ingresá el segundo valor");
+        
+        console.log(num2);
+*/
+
+/*
+    Ejercicio 3:
+        Desarrollar un algoritmo que pida por prompt dos números 
+        y generar la multiplicación.
+*/
+
+
+    </script>
+</body>
+</html>

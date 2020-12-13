@@ -1,0 +1,16 @@
+Desarrollar un algoritmo que pida por prompt dos números y mostrar solo el segundo por consola.
+
+Desarrollar un algoritmo que pida por prompt dos números y generar la multiplicación.
+
+Desarrollar un algoritmo que pida por prompt una base y una altura, y devolver por console.log la superficie
+
+Desarrollar un algoritmo que pida por prompt dos números e informe por console.log quién de los dos es mayor.
+
+Desarrollar un algoritmo que pida por prompt dos números e informe por console.log si son iguales, en caso de no serlo mostrar un error de consola.
+
+Desarrollar un algoritmo que pida por prompt dos números y si el primero es mayor al segundo mostrar la multiplicación entre ambos, si es menor mostrar la resta.
+
+Desarrollar un algoritmo que pida por prompt la edad de una persona y, si es mayor de 18, mostrar por consola "es mayor de edad" sino con un warning "es menor".
+
+
+
