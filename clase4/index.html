@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>HOLA MUNDO</h1>
+
+    <script>
+        // 1° function
+        // 2° Nombre de la función
+        // 3° Parámetros (si los tuviese) => Los paréntesis
+        // 4° a) Lógica o manejo de datos
+        //    b) Cuerpo de la función retornará "algo" 
+        function saludo(){
+            return("Esto es un saludo")
+        } 
+
+        // Ejecutar la función.
+        var mensaje = saludo();
+        console.log(mensaje);
+
+        // Devuelvo una resta
+        function restar(paramentro1, parametro2){
+            var resta =  parametro2 - paramentro1 ;
+            return resta;
+        }
+
+        var resultado = restar(7, 10);
+        console.log("El resultado de la resta es " + resultado);
+
+        function calcularCircunsferencia(radio = 5){
+            console.log(radio)
+            var circunsferencia = 3.14 * radio * radio;
+            return circunsferencia;
+        }
+
+        var circulo = calcularCircunsferencia();
+        console.log(circulo)
+
+
+    </script>
+
+</body>
+</html>
