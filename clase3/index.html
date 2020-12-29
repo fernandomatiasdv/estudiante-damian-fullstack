@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Declaramos la variable para, posteriormente, pase a ser analizada
+        var numero = 7;
+        // Toma el valor de la variable numero y :
+        switch(numero){
+            // Lo compara contra el 1, en caso de ser iguales
+            case 1: 
+                // Ingresa y muestra el console.log
+                console.log("El numero que elegiste es 1");
+                // Luego genera un break porque sino sigue mostrando los otros 
+                // resultados aunque sean falsos
+                break;
+            // Lo compara contra el 5, en caso de ser iguales
+            case 5: 
+                // Ingresa y muestra el console.log
+                console.log("El numero que elegiste es 5");
+                // Luego genera un break porque sino sigue mostrando los otros 
+                // resultados aunque sean falsos
+                break;
+            // En el caso que no haya coincidido con ningún valor
+            default:
+                // Ingresa y muestra el console.log
+                console.log("El numero es diferente a 1 y a 5");
+        }
+        // Cuando finaliza el proceso muestra este console log
+        console.log("Finalizó el switch");
+
+        // En este caso sucede lo mismo, solo que en lugar de comparar un numero
+        // compara un string
+        var diadesemana = "Lunes";
+        switch(diadesemana){
+            case "Lunes": console.log("Comienzo de semana");
+            break;
+            case "Miercoles": console.log("Mitad de semana");
+            break;
+            case "Viernes": console.log("IUJUUU!!!!!!!!");
+            break;
+            default: console.log("No es un día válido");
+        }
+        
+        // Con estos console.log verificamos los tipos de datos:
+        console.log(typeof numero);
+        console.log(typeof diadesemana);
+
+        // Ahora entramos en las funciones.
+        // Una función es un bloque de código que puede ser reutilizado
+        // y llamado cuantas veces se requiera "desentendiéndose" del contenido.
+
+        // En este caso estamos generando la función "sumar".
+        // Para declarar una función debemos usar la palabra reservada "function"
+        // luego el nombre de la función (en este caso SUMAR)
+        // Y, en el caso que lo requiera, pueden llevar parámetros,
+        //      los parámetros los usaremos dentro del bloque de la función y se reciben
+        //      desde afuera de la función. Aquí tenemos numero1 y numero2
+        function sumar(numero1 , numero2){
+        // Luego tendremos un bloque en donde irá la lógica del programa y 
+        //       la declaración de las variables, en caso de tenerlas.
+
+        //  Finalmente tendremos un RETURN, que es lo que devolverá la función.
+        //  En este caso devuelve un console.log con la suma de los dos parámetros.
+            return console.log(numero1 + numero2);
+        }
+
+        // Usando todo lo anterior también podríamos haberla declarado asi (FIJATE QUE SE LLAMA SUMAR2):
+        function sumar2(numero1, numero2){
+            var resultado;   // Aca declaro la variable
+            resultado = numero1 + numero2;  // Aca genero la lógica
+
+            return console.log(resultado); // Devuelvo el console.log
+        }
+
+
+        // Y como el fin de una función es poder llamarla varias veces.
+        // Vamos a correrlas y veras el console.log en tu navegador:
+        sumar(5,7);
+        sumar(1,9);
+        sumar(3,3);
+        sumar(9,5);
+        sumar(1,1);
+
+
+        // Para esta función no retorné un console.log sino que 
+        //      devuelvo un número y, quien lo haya llamado, lo mostrará
+        function resta(numero1 , numero2){
+            var restar = numero2 - numero1; 
+            return restar;
+        }
+
+        var numerorestado = resta(3,9)
+        console.log(numerorestado);
+
+
+
+    </script>
+    
+</body>
+</html>
