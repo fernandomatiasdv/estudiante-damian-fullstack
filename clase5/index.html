@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // obtenerDatosDeCiudad(nombre, poblacion, pais)
+        //Crear una función obtenerDatosDeCiudad que tome como argumentos un string nombre
+        //un número poblacion y un string pais y devuelva string con el siguiente
+        //formato: La ciudad de NOMBRE tiene una población de POBLACION habitantes y está ubicada en PAIS.
+
+        function obtenerDatosDeCiudad (nombre, poblacion, pais){
+            var oracion_nombre='', oracion_poblacion='', oracion_pais='';
+            
+            if(nombre){
+                oracion_nombre = 'La ciudad de ' + nombre;
+            }
+            if(poblacion){
+                oracion_poblacion = ' tiene una población de ' + poblacion + ' habitantes ';
+            }
+            if(pais){
+                oracion_pais = ' está ubicada en ' + pais + '.';
+            }
+
+            return oracion_nombre + oracion_poblacion + oracion_pais;
+        }
+
+        var datos_de_la_ciudad = obtenerDatosDeCiudad('Bariloche' , 123123 , null);
+        console.log(datos_de_la_ciudad)
+
+        // convertirHorasEnSegundos(horas)
+        /* Crear una función convertirHorasEnSegundos que tome como argumento un 
+           número de horas y devuelva la conversión a segundos de dicha cantidad de }
+           horas */
+        function convertirHorasEnSegundos (horas){
+            console.log (horas);
+            var segundos;
+            segundos = 3600 * horas;
+            return (horas +" equivale a " + segundos + " segundos")
+        }
+
+        var resultado = convertirHorasEnSegundos(3); //porque puede ingresar cualquier numero
+        console.log(resultado);
+
+        /*
+            Crear una función convertirHorasEnSegundosOEnMinutos 
+            que tome como argumento un número de horas y un parámetro en el que puedas 
+            pasarle "Minutos" o "Segundos" y devuelva la conversión a segundos  o a 
+            minutos de dicha cantidad de horas, según corresponda
+            
+            
+            convertirHorasEnSegundosOEnMinutos(horas, sonMinutos) ¿son Minutos? True / False
+            sonMinutos => {
+                1. TRUE , 
+                tiempo = 60 * horas
+                2. FALSE , 
+                tiempo = 3600 * horas
+                
+                return tiempo;
+            }
+            
+            convertirHorasEnSegundosOEnMinutos(2, false);
+        */
+
+
+
+        /*
+        obtenerCompetencia(a, b)
+        Crear una función obtenerCompetencia que tome como argumentos 
+        dos strings a y b 
+        y devuelva un string con el formato a vs. b
+        
+        obtenerCompetencia('JavaScript', 'Python') // `JavaScript vs. Python`
+        obtenerCompetencia('Coca', 'Pepsi') // `Coca vs. Pepsi`
+        obtenerCompetencia('Perros', 'Gatos') // `Perros vs. Gatos`
+
+        */
+        function obtenerCompetencia(a, b){
+            return a+' vs '+b;
+        }
+        var obtener_competencia = obtenerCompetencia ("Coca","Pepsi" );
+        console.log(obtener_competencia);
+
+        /*
+        haceCalor(temperatura)
+        Crear una función haceCalor que tome como argumento un número temperatura 
+        y devuelva true si hace calor (22 grados o más) o false de lo contrario
+
+        haceCalor(12) // false
+        haceCalor(22) // true
+        haceCalor(32) // true
+        */
+ function haceCalor (temperatura){
+                        if (temperatura >= 22){
+                             return (" hace calor")
+                        }
+                        else{
+                            return (" hace frio ")
+                        }        
+                    }
+
+                var hace_calor = haceCalor (15)
+                console.log(hace_calor)
+
+    </script>
+</body>
+</html>
