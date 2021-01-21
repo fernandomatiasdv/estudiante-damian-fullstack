@@ -1,0 +1,26 @@
+1) Mostrar los números del 1 al 10.
+2) Mostrar los números del 0 al 150.
+3) Mostrar los números pares del 0 al 100.
+4) Mostrar los números impares del 0 al 99.
+5) Mostrar los números pares del 0 al 100 excepto el 90.
+6) Hacer una tabla de multiplicación del 2 que se muestre asi:
+console.log("0x2=" + producto);
+1x2=2
+2x2=4
+3x2=6
+4x2=8
+5x2=10
+6x2=12
+7x2=14
+8x2=16
+9x2=18
+7) Pedí 10 números. Cuando termine de pedirlo mostrá lo siguiente:
+"El número mas grande es XX y se encontró en la ubicación YY"
+8) Pedí 10 números, éstos solo pueden contener el valor 1, 2 o 3. Luego informá:
+8.a) Cuál se ingresó la mayor cantidad de veces;
+8.b) Una leyenda que muestre lo siguiente:
+	El 1 se ingresó X veces
+	El 2 se ingresó Y veces	
+	El 3 se ingresó Z veces
+9) Hacé una función que pida UN valor, si es 1 que la pantalla muestre 5 veces "Hola" si es 2 que muestre 20 veces la palabra "Chau".
+10) Pedir un valor mínimo y un máximo, mostrar todos los números que haya entre ellos.
